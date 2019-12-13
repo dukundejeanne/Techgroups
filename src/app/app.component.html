@@ -1,0 +1,171 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+  /* *********************************************************************** */
+  .quote{
+    position: absolute;
+width: 402px;
+height: 104px;
+left: 0px;
+top: 0px;
+/* border-radius:0px 200px; */
+border-bottom-right-radius: 50px;
+
+background: #25B4E8;
+}
+.get{
+  position: absolute;
+width: 327px;
+height: 67.76px;
+left: 52px;
+top: 27px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 57.1073px;
+line-height: 78px;
+
+color: #E5E5E5;
+/* background: #25B4E8; */
+}
+
+.container{
+  position: absolute;
+  width: 1966px;
+  height: 1072.36px;
+  left: -24px;
+  top: -7px;
+
+  background: url(web.png);
+}
+
+.logo{
+  position: absolute;
+width: 453px;
+height: 453px;
+left: 733px;
+top: 171px;
+
+  background: url(https://res.cloudinary.com/drrezzrvd/image/upload/v1576227534/logo-04_s8veaf.png);
+  background-repeat: no-repeat;
+
+}
+.marq{
+  position: absolute;
+left: 100px;
+top: 600px;
+font-family: Open Sans;
+font-size:30px;
+letter-spacing: 10px;
+color: grey;
+
+}
+
+  /* **************************************************************************** */
+
+</style>
+
+
+
+<router-outlet></router-outlet>
+<div class="container">
+  <div class="quote"  onclick="openNav()">
+      
+<img class="get" src="https://res.cloudinary.com/drrezzrvd/image/upload/v1576227740/Get_Quote_kptuvj.png">
+  
+</div>
+  
+
+  <div class="logo">
+    
+
+     
+  <ul>
+      <li *ngFor='let goal of goals'>
+       
+      </li>
+  </ul>
+</div>
+<div class="marq">
+    <marquee direction="up"><strong> DELIVER OUTSTANDING DIGITAL EXPERIENCES</strong></marquee> 
+    <!-- <marquee direction="up"></marquee> mention your digital opportunities</marquee> -->
+</div>
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+</div>
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+    </script>
