@@ -87,6 +87,15 @@ line-height: 31px;
 
 color: #666666;
 }
+.jumbotron{
+    position: absolute; 
+     width: 1076px;
+height: 478px;
+left: 770px;
+top: 342px;
+
+background: rgba(255, 255, 255, 0.73);
+}
 </style>
 </head>
 <body>
@@ -101,8 +110,8 @@ color: #666666;
   </div>
 </div>
 
-<h2>Fullscreen Overlay Nav Example</h2>
-<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<!-- <h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p> -->
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 <div id="about">
@@ -123,17 +132,19 @@ color: #666666;
             </div>
 
     </div>
+
+</div>
     <div>
         <h6>Founders</h6>
         <div class="jumbotron">
             <img>
-            <p><strong> Mr.Patrice Nostalgie <br>CEO<br> Software Engineer </strong>Worked as a software developer in China (Chengdu Software Park) where he has got much experience in software development.He believes that one line of code can change people’s lives. Our workforce is our most important asset. Going by the philosophy of "Creativity at its Best", we strongly believe in making the work environment a delight for the team members. We are a growing team that works together in a stimulating environment providing high-quality cost-effective software solutions in the areas of Tourism, Transport, E-Commerce, Digital payments, Education and other utility services</p>
+            <p class="paragraph"><strong> Mr.Patrice Nostalgie <br>CEO<br> Software Engineer </strong>Worked as a software developer in China (Chengdu Software Park) where he has got much experience in software development.He believes that one line of code can change people’s lives. Our workforce is our most important asset. 
+                <br>Going by the philosophy of "Creativity at its Best", we strongly believe in making the work environment a delight for the team members. We are a growing team that works together in a stimulating environment providing high-quality cost-effective software solutions in the areas of Tourism, Transport, E-Commerce, Digital payments, Education and other utility services</p>
 
         </div>
         <h6>Employee profiles</h6>
     </div>
 
-</div>
 <script>
 function openNav() {
   document.getElementById("myNav").style.display = "block";
