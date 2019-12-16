@@ -8,164 +8,147 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+ 
+    /* *********************************************************************** */
+    .quote{
+      position: absolute;
+  width: 402px;
+  height: 104px;
+  left: 0px;
+  top: 0px;
+  /* border-radius:0px 200px; */
+  border-bottom-right-radius: 50px;
+  
+  background: #25B4E8;
   }
-}
-  /* *********************************************************************** */
-  .quote{
+  .get{
     position: absolute;
-width: 402px;
-height: 104px;
-left: 0px;
-top: 0px;
-/* border-radius:0px 200px; */
-border-bottom-right-radius: 50px;
-
-background: #25B4E8;
-}
-.get{
-  position: absolute;
-width: 327px;
-height: 67.76px;
-left: 52px;
-top: 27px;
+  width: 327px;
+  height: 67.76px;
+  left: 52px;
+  top: 27px;
+  
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 57.1073px;
+  line-height: 78px;
+  
+  color: #E5E5E5;
+  /* background: #25B4E8; */
+  }
+  
+  .container{
+    position: absolute;
+    width: 1966px;
+    height: 1072.36px;
+    left: -24px;
+    top: -7px;
+  
+    background: url(web.png);
+  }
+  
+  .logo{
+      position: absolute;
+  width: 477.01px;
+  height: 125.67px;
+  left: 180px;
+  top: 343px;
+  
+    background: url(https://res.cloudinary.com/drrezzrvd/image/upload/v1576487584/logo_letters-03_z9tovu.png);
+    background-repeat: no-repeat;
+  
+  }
+ 
+  
+    /* **************************************************************************** */
+    .overlay-content{ 
+      position: absolute;
+width: 168px;
+height: 36.03px;
+left: 193px;
+top: 557px;
 
 font-family: Open Sans;
 font-style: normal;
-font-weight: bold;
-font-size: 57.1073px;
-line-height: 78px;
+font-weight: normal;
+font-size: 27.22px;
+line-height: 37px;
+/* identical to box height */
 
-color: #E5E5E5;
-/* background: #25B4E8; */
-}
 
-.container{
-  position: absolute;
-  width: 1966px;
-  height: 1072.36px;
-  left: -24px;
-  top: -7px;
-
-  background: url(web.png);
-}
-
-.logo{
-  position: absolute;
-width: 453px;
-height: 453px;
-left: 733px;
-top: 171px;
-
-  background: url(https://res.cloudinary.com/drrezzrvd/image/upload/v1576227534/logo-04_s8veaf.png);
-  background-repeat: no-repeat;
 
 }
-.marq{
-  position: absolute;
-left: 100px;
-top: 600px;
-font-family: Open Sans;
-font-size:30px;
-letter-spacing: 10px;
-color: grey;
-
+.overlay-content a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #000000;
+display: block;
+transition: 0.3s;
+background: rgba(255, 255, 255, 0.7);
 }
+.log{
 
-  /* **************************************************************************** */
+position: absolute;
+width: 127.83px;
+height: 191px;
+left: 1744px;
+top: 24px;
 
-</style>
+background: url(https://res.cloudinary.com/drrezzrvd/image/upload/v1576489687/new_logo_icon-02_qcj56i.png);
+}
+/* *************************************** */
 
+  </style>
+  
+  
+  
+  <router-outlet></router-outlet>
+  <div class="container">
 
+          <p class="log"></p>
 
-<router-outlet></router-outlet>
-<div class="container">
-  <div class="quote"  onclick="openNav()">
+          <div id="myNav" class="overlay">
+
+                  <!-- Button to close the overlay navigation -->
+                  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 -->
+                  <!-- Overlay content -->
+                  <div class="overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                  </div>
+                
+                </div>
+                
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span onclick="openNav()">open</span>
+    <div class="quote"  >
+        
+        <a href="home.html"><img class="get" src="https://res.cloudinary.com/drrezzrvd/image/upload/v1576227740/Get_Quote_kptuvj.png"></a>
+    
+  </div>
+    
+  
+    <div class="logo">
       
-<img class="get" src="https://res.cloudinary.com/drrezzrvd/image/upload/v1576227740/Get_Quote_kptuvj.png">
+  </div>
+
   
-</div>
   
-
-  <div class="logo">
-    
-
-     
-  <ul>
-      <li *ngFor='let goal of goals'>
-       
-      </li>
-  </ul>
-</div>
-<div class="marq">
-    <marquee direction="up"><strong> DELIVER OUTSTANDING DIGITAL EXPERIENCES</strong></marquee> 
-    <!-- <marquee direction="up"></marquee> mention your digital opportunities</marquee> -->
-</div>
-
-
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-</div>
-<script>
-    function openNav() {
-      document.getElementById("myNav").style.display = "block";
-    }
-    
-    function closeNav() {
-      document.getElementById("myNav").style.display = "none";
-    }
-    </script>
+      <div id="myNav" class="over">
+          <!-- <a href=")" class="closebtn" onclick="closeNav()">&times;</a> -->
+          <!-- <div class="overlay-cont">
+            <a href="#">About us </a>
+            <a href="#">Area</a>
+            <a href="#">Product</a>
+            <a href="#">Careers</a>
+            <a href="#">Careers</a>
+          </div>
+        </div> -->
+        <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+  
+  </div>

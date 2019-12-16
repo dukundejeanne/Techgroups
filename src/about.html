@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 50%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(247, 247, 247);
+  background-color: rgba(235, 235, 235);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/* ************************************ */
+.paragraph{
+    position: absolute;
+width: 1048px;
+height: 130px;
+left: 796px;
+top: 114px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 23.22px;
+line-height: 32px;
+
+color: #606060;
+}
+.row{
+    display: flex;
+    position: absolute;
+width: 481px;
+height: 223px;
+left: 825px;
+top: 578px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 31px;
+
+color: #666666;
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+                <a href="#">About</a>
+                    <a href="#about">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+  </div>
+</div>
+
+<h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<div id="about">
+    <div>
+        <p class="paragraph"> Who ever you are, wherever you come from, your presence in HviewTech maters. Whether you need a service, a product from us or want to share your experience, services, products to the Rwandan community, you are most welcome in HviewTech. HviewTech Ltd is here to serve you</p>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <img src="https://res.cloudinary.com/drrezzrvd/image/upload/v1576510353/Vector_yjlxdp.png">
+            <h2>OUR MISION</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-5">
+                <img src="https://res.cloudinary.com/drrezzrvd/image/upload/v1576510355/XMLID_4221_gcqd6i.png">
+                <h2> OUR VISION</h2>
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+
+    </div>
+    <div>
+        <h6>Founders</h6>
+        <div class="jumbotron">
+            <img>
+            <p><strong> Mr.Patrice Nostalgie <br>CEO<br> Software Engineer </strong>Worked as a software developer in China (Chengdu Software Park) where he has got much experience in software development.He believes that one line of code can change people’s lives. Our workforce is our most important asset. Going by the philosophy of "Creativity at its Best", we strongly believe in making the work environment a delight for the team members. We are a growing team that works together in a stimulating environment providing high-quality cost-effective software solutions in the areas of Tourism, Transport, E-Commerce, Digital payments, Education and other utility services</p>
+
+        </div>
+        <h6>Employee profiles</h6>
+    </div>
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+     
+</body>
+</html>
